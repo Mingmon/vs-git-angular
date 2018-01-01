@@ -7,6 +7,7 @@ import { firstComponent } from './first/first.component';
 import { secondComponent } from './second/second.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { WinComponent } from './win/win.component';
+import { AppRouteModule } from './app.routing';
 //import { secondComponent } from './second/second.component';
 
 
@@ -19,7 +20,8 @@ import { WinComponent } from './win/win.component';
     WinComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRouteModule
   ],
   providers: [],
   bootstrap: [AppComponent]
