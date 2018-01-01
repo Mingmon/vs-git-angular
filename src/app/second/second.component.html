@@ -2,10 +2,10 @@
     <div class="jumbotron transparent-bg text-center">
         <h1 class="text-head">SECOND PAGE</h1>
         <div class="form-group">
-            <input type="text" class="form-control" placeholder="Github Username">
+            <input type="text" class="form-control" placeholder="Github Username" [(ngModel)]="secondUser">
         </div>
         <div class="form-group">
-            <button class="btn pink" routerLink="/confirm">Continue</button>
+            <button class="btn pink" routerLink="/confirm" [queryParams] = "{first:firstUser,second:secondUser}">Continue</button>
         </div>
     </div>
 </div>
