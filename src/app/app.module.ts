@@ -10,6 +10,7 @@ import { ConfirmComponent } from './confirm/confirm.component';
 import { WinComponent } from './win/win.component';
 import { AppRouteModule } from './app.routing';
 import { BlueColorDirective } from './blue-color.directive';
+import { MingmonComponent } from './mingmon/mingmon.component';
 //import { secondComponent } from './second/second.component';
 
 
@@ -20,7 +21,8 @@ import { BlueColorDirective } from './blue-color.directive';
     secondComponent,
     ConfirmComponent,
     WinComponent,
-    BlueColorDirective
+    BlueColorDirective,
+    MingmonComponent
   ],
   imports: [
     BrowserModule,

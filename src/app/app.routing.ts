@@ -7,6 +7,7 @@ import { firstComponent } from './first/first.component';
 import { secondComponent } from './second/second.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { WinComponent } from './win/win.component';
+import { MingmonComponent } from './mingmon/mingmon.component';
 //import { secondComponent } from './second/second.component';
 
 const route : Routes = [
@@ -15,6 +16,7 @@ const route : Routes = [
     {path : 'second',component : secondComponent},
     {path : 'confirm',component : ConfirmComponent},
     {path : 'win',component : WinComponent}
+    {path : 'mingmon',component : MingmonComponent}
 ]
 
 @NgModule({

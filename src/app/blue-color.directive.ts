@@ -9,10 +9,13 @@ export class BlueColorDirective {
     element.nativeElement.style.color = "blue";
    }
   
+    //alert
    /*@HostListener('click') doSomething(){
-     alert('Mingmonmumi!');
-   }*/
+     alert('Mingmonmumi!');   
+   }
 
+
+    //event
    @HostListener('mouseenter') doSomething(){
     console.log('mouse just entered');
   }
@@ -23,5 +26,13 @@ export class BlueColorDirective {
 
   @HostListener('mousemove') doSomethingElseElse(){
     console.log('mouse just entered');
-  }
+  }*/
+
+
+    //mouseevent
+    //@HostListener('target:event',['argument'])
+  /*@HostListener('document:click',['$event'])
+  elemClicked(elem){
+    console.log('clicked',elem);*/
+
 }
