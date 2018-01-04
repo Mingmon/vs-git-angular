@@ -2,11 +2,26 @@
   <h1  blueColored>mingmon works!</h1>
 </div>
 
-<div *ngIf="visible;else oddClicked"></div>
+<!-- 
+  <div *ngIf="visible;else oddClicked"></div> 
 <div *ngIf="visible;then evenClicked else oddClicked">
     It's me
 </div>
 ิี<button (click)="toggleDiv()">Toggle</button>
+-->
+
+
+<!--
+<div *ngIf="counter % 2 ==0; let randomVariable">
+  Yep!{{randomVariable}}
+</div>
+-->
+
+
+
+<div *ngIf="myFavLang.frontend; let frontEndLanguages">
+  Yep! {{frontEndLanguages.join('.')}}
+</div>
 
 <ng-template #oddClicked>Odd clicks</ng-template>
 <ng-template #evenClicked>Even clicks</ng-template>
