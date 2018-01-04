@@ -2,7 +2,11 @@
   <h1  blueColored>mingmon works!</h1>
 </div>
 
-<div *ngIf="visible">
+<div *ngIf="visible;else oddClicked"></div>
+<div *ngIf="visible;then evenClicked else oddClicked">
     It's me
 </div>
 ิี<button (click)="toggleDiv()">Toggle</button>
+
+<ng-template #oddClicked>Odd clicks</ng-template>
+<ng-template #evenClicked>Even clicks</ng-template>
